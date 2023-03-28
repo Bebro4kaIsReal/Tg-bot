@@ -29,7 +29,7 @@ async def start_handler(message: types.Message):
     await message.reply(f"Привет, {first_name}!\nНапиши /help, чтобы узнать, что я могу")
 @dp.message_handler(commands=['help'])
 async def help_handler(message: types.Message):
-    await message.reply('Если хочешь, чтобы я вырезал звуковую дорожку, скинь мне видео.\nЕсли тебе нужен перевод текста с картинки, отправь мне фото.\nЕсли нужна сводка погоды, напиши название города')
+    await message.reply('Если хочешь, чтобы я вырезал звуковую дорожку, скинь мне видео, ПИДАРАС!.\nЕсли тебе нужен перевод текста с картинки, отправь мне фото.\nЕсли нужна сводка погоды, напиши название города')
 @dp.message_handler(content_types=['photo'])
 async def handle_docs_photo(message):
     user_id=message.from_user.id
